@@ -6,7 +6,7 @@ gcson = require "../"
 
 require "mocha"
 
-describe "gulp-cson", ->
+describe "gulp-cson-safe", ->
   it "should parse cson to json", (done) ->
     myFunction = gcson()
     fakeFile = new gutil.File

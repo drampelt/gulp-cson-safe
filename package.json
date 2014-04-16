@@ -1,19 +1,19 @@
 {
-  "name": "gulp-cson",
+  "name": "gulp-cson-safe",
   "description": "Parse cson with gulp",
   "version": "0.0.1",
-  "homepage": "http://github.com/stevelacy/gulp-cson",
+  "homepage": "http://github.com/drampelt/gulp-cson-safe",
   "repository": {
     "type": "git",
-    "url": "http://github.com/stevelacy/gulp-cson.git"
+    "url": "http://github.com/drampelt/gulp-cson-safe.git"
   },
-  "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
+  "author": "Daniel Rampelt",
   "main": "./index.js",
   "dependencies": {
     "map-stream": "^0.1.0",
     "coffee-script": "^1.7.1",
     "replace-ext": "0.0.1",
-    "cson": "^1.4.5"
+    "cson-safe": "^0.1.1"
   },
   "devDependencies": {
     "gulp-util": "*",
@@ -36,7 +36,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/stevelacy/gulp-cson/raw/master/LICENSE"
+      "url": "http://github.com/drampelt/gulp-cson-safe/raw/master/LICENSE"
     }
   ]
 }

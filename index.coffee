@@ -1,13 +1,12 @@
 map = require 'map-stream'
 coffee = require 'coffee-script'
 rext = require 'replace-ext'
-cson = require 'cson'
+cson = require 'cson-safe'
 
-module.exports = (options) ->
-  options = {} unless options
+module.exports = ->
 
   gcson = (file, cb) ->
-    data = cson.parseSync file.contents.toString 'utf8', options
+    data = cson.parse file.contents.toString()
     file.contents = new Buffer JSON.stringify data
     file.path = rext file.path, '.json'
 
